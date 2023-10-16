@@ -1,52 +1,44 @@
 .header {
-  &__mobile {
-    position: fixed;
-    z-index: 2;
-    width: 100%;
-    background-color: var(--white);
-    padding: 0 15px;
-  }
+  &__mobile {}
 
   &__mobile-top {
     display: flex;
     justify-content: space-between;
+    background-color: var(--white);
     align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0 15px;
     padding-top: 15px;
     padding-bottom: 15px;
-    z-index: 2;
-    position: relative;
-  }
-
-  &__burger {
-    height: 30px;
+    z-index: 3;
+    position: fixed;
+    transform: translateY(0);
+    transition: all .2s ease;
   }
 
   &__logo {
-    height: 27px;
-    cursor: pointer;
-
-  }
-
-  &__phone-icon {
-    height: 32px;
-    cursor: pointer;
+    display: flex;
+    flex-shrink: 0;
   }
 
   &__mobile-bottom {
-    overflow: hidden;
-    position: absolute;
+    overflow: auto;
+    position: fixed;
     top: 0;
     left: 0;
+    bottom: 0;
+    right: 0;
     width: 100%;
-    min-height: 600px;
-    padding-top: 30px;
-    z-index: 1;
+    padding-top: 100px;
     background-color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     transform: translateY(-100%);
-    transition: all 1s ease;
+    transition: all .3s ease;
+    z-index: 2;
   }
 
   &__mobile-nav {
@@ -79,30 +71,30 @@
   }
 }
 
+.open {
+  transform: translateY(0);
+  transition: all .5s ease;
+}
+
+.hide {
+  transform: translateY(-100%);
+  transition: all .3s ease;
+}
+
+
 .nav-list {
   & li {
     font-size: 14px;
-    font-family: "NT Somic Medium";
+    font-family: var(--font-medium);
   }
 }
 
 .phone a {
   color: var(--gray-100);
   text-decoration: none;
-  font-family: "NT Somic Medium";
+  font-family: var(--font-medium);
 }
 
-.open {
-  transform: translateY(10%)
-}
-
-@include media-min($md) {
-  .header {
-    &__mobile {
-      padding: 0 40px;
-    }
-  }
-}
 
 @include media-min($xl) {
   .header {
@@ -110,17 +102,27 @@
       display: none;
     }
 
+    &__logo svg {
+      width: 144px;
+      height: 36px;
+    }
+
     &__desktop {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      display: flex;
+
       align-items: center;
       padding: 20px 0;
+
+      & > * {
+        flex-basis: 33%;
+      }
 
     }
 
     &__desktop-nav {
       display: flex;
-
+      justify-content: start;
+      flex-shrink: 0;
 
       & li {
         margin-left: 30px;
@@ -132,11 +134,15 @@
     }
 
     &__logo {
-      justify-self: center;
+      display: flex;
+      justify-content: center;
+
     }
 
     &__desktop-phone {
-      justify-self: end;
+      display: flex;
+      justify-content: end;
+      flex-shrink: 0;
     }
 
   }
