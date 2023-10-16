@@ -1,0 +1,51 @@
+{
+  "name": "gulp-builder",
+  "version": "2.0.1",
+  "description": "Сборщик проектов на gulp",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "server": "gulp server",
+    "clean": "gulp clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/putn1k/gulp-builder.git"
+  },
+  "author": "putn1k",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/putn1k/gulp-builder/issues"
+  },
+  "homepage": "https://github.com/putn1k/gulp-builder#readme",
+  "devDependencies": {
+    "@babel/core": "7.19.6",
+    "@babel/preset-env": "7.19.4",
+    "babel-loader": "8.2.5",
+    "browser-sync": "2.27.10",
+    "del": "6.0.0",
+    "gulp": "4.0.2",
+    "gulp-autoprefixer": "8.0.0",
+    "gulp-babel": "8.0.0",
+    "gulp-clean-css": "4.3.0",
+    "gulp-concat": "2.6.1",
+    "gulp-csscomb": "3.1.0",
+    "gulp-file-include": "2.3.0",
+    "gulp-imagemin": "7.1.0",
+    "gulp-notify": "4.0.0",
+    "gulp-postcss": "9.0.1",
+    "gulp-sass": "5.1.0",
+    "gulp-sourcemaps": "3.0.0",
+    "gulp-svg-sprite": "2.0.0",
+    "sass": "1.55.0"
+  },
+  "dependencies": {
+    "gulp-cli": "2.3.0"
+  },
+  "browserslist": [
+    "defaults",
+    "last 1 versions",
+    "not IE 11"
+  ]
+}

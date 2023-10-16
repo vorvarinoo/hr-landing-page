@@ -1,0 +1,53 @@
+h1 {
+  font-size: $font-h1;
+  line-height: 1.3;
+  font-family: "NT Somic Bold";
+}
+
+h2 {
+  font-size: $font-h2;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: $font-h3;
+  line-height: 1.3;
+}
+
+h4 {
+  font-size: $font-h4;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.hd {
+  font-size: $font-hd;
+  line-height: 1.3;
+  font-weight: 700;
+
+  &--h1 {
+    font-size: $font-h1;
+    line-height: 1.3;
+  }
+
+  &--h2 {
+    font-size: $font-h2;
+    line-height: 1.3;
+  }
+
+  &--h3 {
+    font-size: $font-h3;
+    line-height: 1.3;
+  }
+
+  &--h4 {
+    font-size: $font-h4;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+}
+
+.small {
+  font-size: $font-sm;
+  line-height: 1.3;
+}

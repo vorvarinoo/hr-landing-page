@@ -1,0 +1,35 @@
+// COLORS
+
+
+:root {
+  --accent: #4d5acf;
+  --white: #FFFFFF;
+  --black: #141414;
+  --gray-60: #717B84;
+  --red-100: #CC3D29;
+  --st-bg: #EBF9FB;
+  --blue: #4d5acf;
+
+
+  --main-font: "NT Somic";
+
+
+  --main-text-color: var(--black);
+  --main-bg-color: var(--st-bg)
+}
+
+//BREAKPOINTS FOR MOBILE FIRST
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+// Fonts
+
+
+$font-hd: 32px;
+$font-h1: 32px;
+$font-h2: 26px;
+$font-h3: 18px;
+$font-h4: 18px;
+$font-sm: 12px;
