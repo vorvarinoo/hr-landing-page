@@ -1,0 +1,135 @@
+.vacancy {
+  padding-top: 50px;
+
+  &__title {
+    text-align: center;
+    max-width: 570px;
+    margin: 0 auto;
+
+    & span:first-child {
+      color: var(--green-100);
+    }
+
+    & span:last-child {
+      color: var(--red-100);
+    }
+  }
+
+  &-cart {
+    &__block {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+      grid-gap: 30px;
+      justify-content: center;
+    }
+
+    &__item {
+      position: relative;
+      padding: 24px;
+      border-radius: 12px;
+      border: 1px solid var(--gray-30);
+      text-align: start;
+    }
+  }
+
+
+  &-item {
+
+    &__title {
+      background-color: var(--green-100);
+      position: absolute;
+      top: -15px;
+      left: 24px;
+    }
+
+    &__top {
+      position: relative;
+    }
+
+
+    &__icon {
+      position: absolute;
+      right: 0;
+      top: -4px;
+    }
+
+    &__bottom {
+      font-size: 14px;
+
+      & > a {
+        font-size: 12px;
+      }
+    }
+
+    &__txt-block {
+      margin-top: 12px;
+
+      & span:first-child {
+        position: relative;
+        padding-right: 44px;
+
+        &::after {
+          content: '';
+          position: absolute;
+          background-image: url(../img/line.svg);
+          background-repeat: no-repeat;
+          background-size: 26px 16px;
+          width: 26px;
+          height: 16px;
+          right: 6px;
+          top: 50%;
+          transform: translateY(-50%);
+
+        }
+      }
+    }
+
+    &__staff {
+      font-family: "NT Somic Medium";
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+
+    &__case {
+      position: relative;
+      font-family: "NT Somic Medium";
+      color: var(--green-100);
+      cursor: pointer;
+
+      &::after {
+        content: '';
+        position: absolute;
+        background-image: url(../img/arrow.svg);
+        background-repeat: no-repeat;
+        background-size: 18px 10px;
+        width: 18px;
+        height: 10px;
+        right: -30px;
+        top: 50%;
+        transform: translateY(-50%);
+
+      }
+    }
+  }
+}
+
+
+@include media-min($xl) {
+  .vacancy {
+
+    &__title {
+      max-width: 1004px;
+    }
+
+    &-item {
+      &__bottom {
+        font-size: 16px;
+
+        & > a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

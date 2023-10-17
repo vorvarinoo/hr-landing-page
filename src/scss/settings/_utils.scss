@@ -67,3 +67,31 @@ input[type="checkbox"].visually-hidden {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
+
+.label {
+  color: var(--white);
+  padding: 6px 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+.sub-title {
+  font-family: "NT Somic Bold";
+  font-size: 22px;
+}
+
+
+
+
+@include media-min($xl) {
+  .label {
+    font-size: 14px;
+  }
+
+  .sub-title {
+    font-size: 24px;
+  }
+}
