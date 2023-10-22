@@ -83,6 +83,17 @@ input[type="checkbox"].visually-hidden {
   font-size: 22px;
 }
 
+.txt-margin-reset {
+  & * {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
 
 
 

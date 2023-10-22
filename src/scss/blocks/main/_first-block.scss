@@ -88,18 +88,6 @@
   }
 }
 
-.txt-margin-reset {
-  & * {
-    &:first-child {
-      margin-top: 0;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-}
-
 @include media-min($md) {
   .first-block {
     min-height: 490px;
