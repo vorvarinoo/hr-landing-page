@@ -183,6 +183,10 @@ input[type=checkbox].visually-hidden {
 .sub-title {
   font-size: 22px;
   font-family: "NT Somic Bold";
+  color: var(--main-text);
+}
+.sub-title--color-green {
+  color: var(--green-100);
 }
 
 .txt-margin-reset *:first-child {
@@ -808,9 +812,6 @@ h4 {
 
   background: var(--white);
   border-bottom: 1px solid var(--gray-30);
-}
-.profit__list li:nth-child(-n+2) > span {
-  color: var(--green-100);
 }
 .profit__list li:first-child {
   border-radius: 12px 12px 0 0;
