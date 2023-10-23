@@ -79,9 +79,18 @@ input[type="checkbox"].visually-hidden {
 }
 
 .sub-title {
+  color: var(--main-text);
   font-family: "NT Somic Bold";
   font-size: 22px;
+
+  &--color {
+    &-green {
+      color: var(--green-100);
+    }
+  }
 }
+
+
 
 .txt-margin-reset {
   & * {
