@@ -30,6 +30,20 @@
       grid-template-columns: repeat(3, 1fr);
     }
   }
+
+  &__decor {
+    &-left {
+      position: absolute;
+      left: 30px;
+      bottom: 50px;
+    }
+
+    &-right {
+      position: absolute;
+      right: 0;
+      bottom: -5px;
+    }
+  }
 }
 
 
@@ -81,19 +95,5 @@
       --h3-font-size: 20px;
       --p-font-size: 16px;
     }
-  }
-}
-
-.decor {
-  &__left {
-    position: absolute;
-    left: 30px;
-    bottom: 50px;
-  }
-
-  &__right {
-    position: absolute;
-    right: 0;
-    bottom: -5px;
   }
 }
