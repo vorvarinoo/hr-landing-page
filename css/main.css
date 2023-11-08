@@ -942,6 +942,16 @@ h4 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+.cooperation__decor-left {
+  position: absolute;
+  bottom: 50px;
+  left: 30px;
+}
+.cooperation__decor-right {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+}
 
 .card-item--cooperation {
   position: relative;
@@ -993,15 +1003,4 @@ h4 {
     --h3-font-size: 20px;
     --p-font-size: 16px;
   }
-}
-
-.decor__left {
-  position: absolute;
-  bottom: 50px;
-  left: 30px;
-}
-.decor__right {
-  position: absolute;
-  right: 0;
-  bottom: -5px;
 }
