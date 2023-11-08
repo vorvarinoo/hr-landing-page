@@ -1,0 +1,85 @@
+.cooperation {
+  --card-padding: 30px;
+  --card-border-radius: 18px;
+
+  padding: 120px 0 80px;
+
+  &__top {
+    text-align: center;
+  }
+
+  &__label {
+    background-color: var(--red-100);
+  }
+
+  &__title {
+    margin-top: 10px;
+  }
+
+  &__list {
+    margin-top: 40px;
+    display: grid;
+    grid-gap: 20px;
+
+    @include media-min($md) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 30px;
+    }
+
+    @include media-min($xl) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+
+
+.card-item {
+
+  &--cooperation {
+    --h3-font-size: 18px;
+    --h3-color: var(--red-100);
+    --card-padding: 30px;
+
+    padding: var(--card-padding);
+
+    & > h3 {
+      color: var(--h3-color);
+    }
+
+    & > p {
+      font-size: var(--p-font-size);
+      margin-top: 16px;
+      margin-bottom: 0;
+    }
+
+    &--orange {
+      --h3-font-size: 22px;
+      --h3-color: var(--white);
+      --p-font-size: 16px;
+
+      background-color: var(--red-100);
+
+      color: var(--white);
+
+      @include media-min($md) {
+        grid-column: 1 / 3;
+      }
+
+      @include media-min($xl) {
+        --p-font-size: 18px;
+
+        grid-row: 1 / 3;
+        grid-column: 3 / 4;
+      }
+    }
+
+    @include media-min($md) {
+      --h3-font-size: 20px;
+      --p-font-size: 16px;
+    }
+  }
+
+
+
+}

@@ -87,6 +87,8 @@ input[type="checkbox"].visually-hidden {
     &-green {
       color: var(--green-100);
     }
+
+
   }
 }
 
@@ -114,4 +116,10 @@ input[type="checkbox"].visually-hidden {
   .sub-title {
     font-size: 24px;
   }
+}
+
+.card-item {
+  border-radius: var(--card-border-radius);
+  border: 1px solid var(--gray-30);
+  padding: var(--card-padding, 24px);
 }
